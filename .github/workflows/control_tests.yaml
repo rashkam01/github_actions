@@ -20,7 +20,7 @@ jobs:
 
       - name: Run tests
         run: |
-          pytest
+          pytest . -v --maxfail=1
 
       - name: Run flake8
         uses: py-actions/flake8@v2
